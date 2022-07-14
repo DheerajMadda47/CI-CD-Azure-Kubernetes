@@ -15,6 +15,7 @@ spec:
       containers:
       - name: image-demo1project
         image: demo1containerregistry.azurecr.io/image-demo1project:#{Build.BuildId}#
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
         
